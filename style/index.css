@@ -4,7 +4,7 @@
  }
  @font-face {
     font-family: Roboto_Slab;
-    src: url("/fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
+    src: url("./fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
  }
  .top-nav{
     width: 100%;
