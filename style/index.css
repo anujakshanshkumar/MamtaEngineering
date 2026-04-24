@@ -1,116 +1,159 @@
- *{
-    padding: 0;
-    margin: 0;
- }
- @font-face {
-    font-family: Roboto_Slab;
-    src: url("/fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
- }
-.navbar{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   height: 10em;
-   background-color: brown;
-
+* {
+  padding: 0;
+  margin: 0;
 }
-.navbar > .top-nav >ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+body {
+  background-color: #f8f9fa;
 }
-.navbar > .top-nav > ul > li{
-   padding-left: 10px;
-   padding-right: 10px;
-   font-family: Roboto_Slab;
+@font-face {
+  font-family: Roboto_Slab;
+  src: url("/fonts/RobotoSlab-Bold.ttf");
 }
-.navbar > .top-nav{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   background-color: aqua;
-   width: 100%;
-   height: 1.5em;
+@font-face {
+  font-family: LoabsterItalicBold;
+  src: url("/fonts/LobsterTwo-BoldItalic.ttf");
 }
-.nav-link{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   
-
+@font-face {
+  font-family: RubikGemstones;
+  src: url("/fonts/RubikGemstones.ttf");
 }
-
- .nav-link > .logo {
-   display: flex;
-   align-items: center;
-  
+@font-face {
+  font-family: FrederickatheGreat;
+  src: url("/fonts/FrederickatheGreat.ttf");
+}
+  .navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10em;
+}
+.navbar > .top-nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.navbar > .top-nav > ul > li {
+  font-family: Roboto_Slab;
+  color: white;
+}
+.navbar > .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #212529;
+  width: 100%;
+  height: 1.5em;
+  border-bottom: white solid 2px;
+}
+.navbar > .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ background-color: #212529;
+}
+.nav-link > .logo {
+  padding-top: 3px;
+  display: flex;
+  align-items: end;
 }
 .nav-link > .logo > img {
-   height: auto;
-   width: 6rem;
-
-
+  display: flex;
+  padding-left: 1rem;
+  height: 8rem;
+  width: 8rem;
 }
-.nav-menu{
+.anchors > .nav-menu > .dropdown > .mainlist {
+  font-family: LoabsterItalicBold;
+}
+.nav-menu {
   display: flex;
   gap: 5rem;
 }
-.nav-menu a{
-   text-decoration: none;
-   color: white;
-   font-size: 1.2rem;
-   font-weight: 600;
-   padding-right: 2.9rem;
-   transition: all 0.3s ease;
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-right: 2.9rem;
+  transition: all 0.3s ease;
+  color: white;
 }
-.nav-menu a:hover{
-   color: rgb(255, 224, 123);
-   border-bottom: 1px solid black;
-}
-
-.dropdown{
-   position: relative;
+.nav-menu a:hover {
+  color: #ff8c00;
+  border-bottom: 1px solid black;
 }
 
-.dropdown-menu{
-   position: absolute;
-   display: block;
-   list-style: none;
-   background-color: white;
-   top: 100%;
-   left: 0;
-   min-width: 8rem;
-   padding: 1rem 1.5rem;
-   border-radius: 5px;
-   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
-   opacity: 0;
-   visibility: hidden;
-   transform: translateY(-10px);
-   transition: all 0.3s ease;
+.dropdown {
+  position: relative;
 }
 
-.dropdown:hover .dropdown-menu{
-   opacity: 1;
-   visibility: visible;
-   transform: translateY(0);
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  min-width: 8rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
 }
 
-.dropdown-menu li{
-   border-bottom: 1px solid rgba(139, 139, 139, 0.704);
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-.dropdown-menu li:last-child{
-   border-bottom: none;
+.dropdown-menu li {
+  border-bottom: 1px solid rgba(139, 139, 139, 0.704);
+  /* font-family: LoabsterItalicBold; */
 }
 
-.dropdown-menu a{
-   display: block;
-   color: black;
-   padding: 1rem;
+.dropdown-menu li:last-child {
+  border-bottom: none;
 }
 
-.dropdown-menu a:hover{
-   color: blue;
-   border-bottom: none;
+.dropdown-menu a {
+  display: block;
+  color: black;
+  padding: 1rem;
+}
+
+.dropdown-menu a:hover {
+  color: blue;
+  border-bottom: none;
+}
+.slideshow {
+  width: 100%;
+  max-width: 100%;
+  height: 630px;
+  position: relative;
+  z-index: -1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.navbar > .nav-link > .name > h3{
+   font-family: FrederickatheGreat;
+   font-size: xxx-large;
 }
