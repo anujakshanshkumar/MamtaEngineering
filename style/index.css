@@ -9,19 +9,19 @@ body {
 
 @font-face {
   font-family: Roboto_Slab;
-  src: url("/fonts/RobotoSlab-Bold.ttf");
+  src: url("./fonts/RobotoSlab-Bold.ttf");
 }
 @font-face {
   font-family: LoabsterItalicBold;
-  src: url("/fonts/LobsterTwo-BoldItalic.ttf");
+  src: url("./fonts/LobsterTwo-BoldItalic.ttf");
 }
 @font-face {
   font-family: RubikGemstones;
-  src: url("/fonts/RubikGemstones.ttf");
+  src: url("./fonts/RubikGemstones.ttf");
 }
 @font-face {
   font-family: FrederickatheGreat;
-  src: url("/fonts/FrederickatheGreat.ttf");
+  src: url("./fonts/FrederickatheGreat.ttf");
 }
 
   .navbar {
